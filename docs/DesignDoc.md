@@ -92,7 +92,9 @@ The Product model includes an id, name, description, price, and quantity. The Us
 
 ### Static Code Analysis/Design Improvements
 
-The main area in which our code could be improved is in unity and parity between code written by different developers. Not only do we have different code styles, but we also have different ideas and levels of experience that result in vast differences in implementation. Assigning responsibilities of team members provides some help in mitigating this, but as the required functionality becomes more complex, more connection between classes implemented by different team members is required.
+[Diagram](static-code-analysis.png)
+
+The main area in which our code could be improved is in unity and parity between code written by different developers. Not only do we have different code styles, but we also have different ideas and levels of experience that result in vast differences in implementation. Assigning responsibilities of team members provides some help in mitigating this, but as the required functionality becomes more complex, more connection between classes implemented by different team members is required. Many of the frontend tests in the static code analysis resulted in some false bugs such as i tags that should be em tags, although this is required by the library. There were many unused imports in both the frontend and backend that should have been removed.
 
 ## Testing
 
@@ -100,7 +102,7 @@ Testing for the program was performed using both unit testing and human function
 
 ### Acceptance Testing
 
-There were 6 implemented user stories and they all passed their acceptance criteria tests. The 7th component is related to carts, which the front end for that has yet to be implemented, so no tests were able to be run.
+There were 23 implemented user stories and all of which passed their acceptance criteria tests. This number is not representative of the number of features we implemented, as many of the tasks should have been divided up into multiple user stories
 
 ### Unit Testing and Code Coverage
 
